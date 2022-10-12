@@ -6,11 +6,13 @@ import Library from '~/pages/Library';
 import Introduce from '~/pages/Introduce';
 import NewsAndEvents from '~/pages/NewsAndEvents';
 import Emax from '~/pages/Emax';
+import SliderLayout from '~/layouts/SliderLayout';
 
 const publicRouter = [
   {
     path: config.routes.home,
     component: Home,
+    layout: SliderLayout,
   },
   {
     path: config.routes.product,
