@@ -12,9 +12,7 @@ function SliderLayout({ children }) {
     <div className={cx('wrapper')}>
       <Header />
       <Slider></Slider>
-      <div className={cx('container')}>
-        <div className={cx('content')}>{children}</div>
-      </div>
+      <div className={cx('content')}>{children}</div>
       <Footer />
     </div>
   );

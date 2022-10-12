@@ -7,7 +7,6 @@ import styles from './Slider.module.scss';
 import slider1 from '~/assets/images/CEREC-thiet-bi-chan-doan-hinh-anh-banner.jpg';
 import slider2 from '~/assets/images/Banner-01-1.png';
 import slider3 from '~/assets/images/Axeos-WebSlide-01-scaled.jpg';
-import { Zoom } from 'react-reveal';
 
 const cx = classNames.bind(styles);
 
@@ -56,6 +55,7 @@ function Slider() {
                     backgroundImage: `url("${item.img}")`,
                     backgroundAttachment: 'contain',
                     backgroundSize: '100%',
+                    backgroundPosition: 'center center',
                   }}
                 >
                   <div className={cx('wrapper-content')}>
