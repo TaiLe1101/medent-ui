@@ -78,28 +78,32 @@ function Footer() {
   return (
     <Zoom>
       <div className={cx('wrapper')}>
-        <Row gutter={[32, 32]}>
-          <Col span={24} lg={{ span: 16 }} md={{ span: 16 }}>
-            <Row gutter={[32, 32]} wrap>
-              {NAV_FOOTER_LIST.map((item, index) => {
-                return (
-                  <Col key={index} span={24} lg={{ span: 8 }} md={{ span: 12 }}>
-                    <NavFooter data={item.data}>{item.title}</NavFooter>
-                  </Col>
-                );
-              })}
+        <div className="container">
+          <div className={cx('wrapper-content')}>
+            <Row gutter={[32, 32]}>
+              <Col span={24} lg={{ span: 16 }} md={{ span: 16 }}>
+                <Row gutter={[32, 32]} wrap>
+                  {NAV_FOOTER_LIST.map((item, index) => {
+                    return (
+                      <Col key={index} span={24} lg={{ span: 8 }} md={{ span: 12 }}>
+                        <NavFooter data={item.data}>{item.title}</NavFooter>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
+              <Col span={24} lg={{ span: 8 }} md={{ span: 8 }}>
+                {INFO_PANNEL_LIST.map((item, index) => {
+                  return (
+                    <InfoPanel key={index} icon={item.icon}>
+                      {item.name}
+                    </InfoPanel>
+                  );
+                })}
+              </Col>
             </Row>
-          </Col>
-          <Col span={24} lg={{ span: 8 }} md={{ span: 8 }}>
-            {INFO_PANNEL_LIST.map((item, index) => {
-              return (
-                <InfoPanel key={index} icon={item.icon}>
-                  {item.name}
-                </InfoPanel>
-              );
-            })}
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
     </Zoom>
   );
