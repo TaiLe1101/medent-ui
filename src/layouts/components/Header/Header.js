@@ -10,6 +10,7 @@ import styles from './Header.module.scss';
 import config from '~/configs';
 import logo from '~/assets/images/logo.png';
 import Navigation from '~/component/Navigation';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 

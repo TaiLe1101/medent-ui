@@ -1,6 +1,7 @@
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import config from '~/configs';
 import styles from './Navigation.module.scss';
