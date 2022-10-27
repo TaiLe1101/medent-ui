@@ -21,6 +21,10 @@ import slotionImg from '~/assets/images/Solutions1.svg';
 import customerImg from '~/assets/images/Customer1.svg';
 import partnersImg from '~/assets/images/Partners1.svg';
 import brandsItem from '~/assets/images/Brands1.svg';
+import image1 from '../../assets/images/i-1.jpg';
+import image2 from '../../assets/images/i-2.jpg';
+import image3 from '../../assets/images/i-3.png';
+import image4 from '../../assets/images/i-5.jpg';
 
 export {
   logo1,
@@ -44,4 +48,8 @@ export {
   partnersImg,
   brandsItem,
   background2,
+  image1,
+  image2,
+  image3,
+  image4,
 };
