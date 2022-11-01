@@ -65,7 +65,7 @@ function Navigation() {
         </ul>
       </li>
       <li className={cx('item')}>
-        <Link className={cx('link')}>
+        <Link to={config.routes.solution} className={cx('link')}>
           Giải pháp
           <FontAwesomeIcon className={cx('icon')} icon={faCaretDown}></FontAwesomeIcon>
         </Link>

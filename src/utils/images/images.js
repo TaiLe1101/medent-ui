@@ -15,6 +15,7 @@ import logo14 from '../../assets/images/l-14.png';
 import logo15 from '../../assets/images/l-15.png';
 
 import background1 from '../../assets/images/b-gr-1.jpg';
+import background3 from '../../assets/images/b-gr-2.jpg';
 import background2 from '../../assets/images/backgr.jpg';
 
 import slotionImg from '~/assets/images/Solutions1.svg';
@@ -46,12 +47,13 @@ export {
   logo13,
   logo14,
   logo15,
-  background1,
   slotionImg,
   customerImg,
   partnersImg,
   brandsItem,
+  background1,
   background2,
+  background3,
   image1,
   image2,
   image3,

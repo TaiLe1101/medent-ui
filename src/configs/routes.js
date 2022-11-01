@@ -8,6 +8,7 @@ const routes = {
   contact: '/contact-us',
   newsAndEvents: '/news-envents',
   emax: '/emax',
+  solution: '/solution',
 };
 
 export default routes;
