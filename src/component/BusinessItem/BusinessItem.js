@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './BusinessItem.module.scss';
 
@@ -27,5 +28,13 @@ function BusinessItem({ title, description, img, className, right = false }) {
     </div>
   );
 }
+
+BusinessItem.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.string,
+  classNames: PropTypes.string,
+  right: PropTypes.bool,
+};
 
 export default BusinessItem;

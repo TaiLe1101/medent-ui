@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import { image4 } from '~/utils/images';
 import styles from './CardBlog.module.scss';
 
 const cx = classNames.bind(styles);
@@ -40,5 +40,14 @@ function CardBlog({ backgroundImage, day, years, route, title, description }) {
     </div>
   );
 }
+
+CardBlog.propTypes = {
+  backgroundImage: PropTypes.string,
+  day: PropTypes.string,
+  years: PropTypes.string,
+  route: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
 
 export default CardBlog;

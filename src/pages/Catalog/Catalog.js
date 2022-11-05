@@ -8,6 +8,52 @@ import Section1 from './components/Section1';
 
 const cx = classNames.bind(styles);
 
+const CARD_DENTISTRY = [
+  {
+    label: 'Xem Thêm',
+    img: image5,
+    title: 'Chỉnh nha',
+    secondary: true,
+    to: './@product-1',
+    category: 'chinhNha',
+  },
+  {
+    label: 'Xem Thêm',
+    img: image5,
+    title: 'Implant',
+    secondary: true,
+    to: './@product-2',
+  },
+  {
+    label: 'Xem Thêm',
+    img: image5,
+    title: 'Lâm sàng',
+    secondary: true,
+    to: './@product-3',
+  },
+  {
+    label: 'Xem Thêm',
+    img: image5,
+    title: 'Dụng cụ nha khoa',
+    secondary: true,
+    to: './@product-4',
+  },
+  {
+    label: 'Xem Thêm',
+    img: image5,
+    title: 'Dụng cụ nha khoa',
+    secondary: true,
+    to: './@product-5',
+  },
+  {
+    label: 'Xem Thêm',
+    img: image5,
+    title: 'Thiết bị nha khoa',
+    secondary: true,
+    to: './@product-6',
+  },
+];
+
 function Catalog() {
   return (
     <div className={cx('wrapper')}>
@@ -15,27 +61,31 @@ function Catalog() {
         <Search></Search>
         <Section1></Section1>
 
-        <h2 className={cx('title')}> Nha khoa</h2>
-        <Row gutter={[32, 32]}>
-          <Col span={24} lg={{ span: 8 }}>
-            <CardBtn label="Tài Lê" img={image5} secondary title="Dụng cụ nha khoa"></CardBtn>
-          </Col>
-          <Col span={24} lg={{ span: 8 }}>
-            <CardBtn label="Tài Lê" img={image5} secondary title="Dụng cụ nha khoa"></CardBtn>
-          </Col>
-          <Col span={24} lg={{ span: 8 }}>
-            <CardBtn label="Tài Lê" img={image5} secondary title="Dụng cụ nha khoa"></CardBtn>
-          </Col>
-          <Col span={24} lg={{ span: 8 }}>
-            <CardBtn label="Tài Lê" img={image5} secondary title="Dụng cụ nha khoa"></CardBtn>
-          </Col>
-          <Col span={24} lg={{ span: 8 }}>
-            <CardBtn label="Tài Lê" img={image5} secondary title="Dụng cụ nha khoa"></CardBtn>
-          </Col>
-          <Col span={24} lg={{ span: 8 }}>
-            <CardBtn label="Tài Lê" img={image5} secondary title="Dụng cụ nha khoa"></CardBtn>
-          </Col>
-        </Row>
+        <section className={cx('section-2')}>
+          <h2 className={cx('title')}> Nha khoa</h2>
+          <Row gutter={[32, 32]}>
+            {CARD_DENTISTRY.map((card, index) => {
+              return (
+                <Col span={24} lg={{ span: 8 }}>
+                  <CardBtn label={card.label} img={card.img} to={card.to} secondary={card.secondary} title={card.title}></CardBtn>
+                </Col>
+              );
+            })}
+          </Row>
+        </section>
+
+        <section className={cx('section-3')}>
+          <h2 className={cx('title')}>La bo</h2>
+          <Row gutter={[32, 32]}>
+            {CARD_DENTISTRY.map((card, index) => {
+              return (
+                <Col span={24} lg={{ span: 8 }}>
+                  <CardBtn label={card.label} img={card.img} secondary={card.secondary} title={card.title}></CardBtn>
+                </Col>
+              );
+            })}
+          </Row>
+        </section>
       </div>
     </div>
   );

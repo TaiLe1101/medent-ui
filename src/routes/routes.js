@@ -12,6 +12,7 @@ import { background3 } from '~/utils/images';
 import Catalog from '~/pages/Catalog';
 import News from '~/pages/News';
 import Education from '~/pages/Education';
+import CatalogDetail from '~/pages/CatalogDetail';
 
 const publicRouter = [
   {
@@ -59,6 +60,12 @@ const publicRouter = [
     path: config.routes.catalog,
     component: Catalog,
     navCurrent: 'Catalog',
+    backgroundImage: background3,
+  },
+  {
+    path: config.routes.catalogDetail,
+    component: CatalogDetail,
+    navCurrent: 'Catalog Mới',
     backgroundImage: background3,
   },
   {

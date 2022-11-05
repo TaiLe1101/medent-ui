@@ -10,6 +10,7 @@ const routes = {
   emax: '/emax',
   solution: '/solution',
   catalog: '/catalog',
+  catalogDetail: '/catalog/@:product',
   news: '/news',
   education: '/education',
 };

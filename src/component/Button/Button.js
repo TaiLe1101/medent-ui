@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
@@ -15,5 +16,11 @@ function Button({ children, onClick, className, to }) {
     </Link>
   );
 }
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+  to: PropTypes.string,
+};
 
 export default Button;
