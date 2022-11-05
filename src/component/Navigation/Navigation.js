@@ -1,8 +1,7 @@
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import config from '~/configs';
 import styles from './Navigation.module.scss';
 
@@ -12,10 +11,10 @@ function Navigation() {
   return (
     <ul className={cx('wrapper')}>
       <li className={cx('item')}>
-        <Link className={cx('link')} to={config.routes.product}>
+        <NavLink className={cx('link')} to={config.routes.product}>
           Sản phẩm
           <FontAwesomeIcon className={cx('icon')} icon={faCaretDown}></FontAwesomeIcon>
-        </Link>
+        </NavLink>
         <ul className={cx('sub-list')}>
           <li className={cx('sub-item')}>
             <Link className={cx('sub-link')} to="#">
@@ -65,114 +64,120 @@ function Navigation() {
         </ul>
       </li>
       <li className={cx('item')}>
-        <Link to={config.routes.solution} className={cx('link')}>
+        <NavLink to={config.routes.solution} className={cx('link')}>
           Giải pháp
           <FontAwesomeIcon className={cx('icon')} icon={faCaretDown}></FontAwesomeIcon>
-        </Link>
+        </NavLink>
         <ul className={cx('sub-list')}>
           <li className={cx('sub-item')}>
-            <Link className={cx('sub-link')} to="#">
+            <NavLink className={cx('sub-link')} to="#">
               CAD Cam
-            </Link>
+            </NavLink>
           </li>
           <li className={cx('sub-item')}>
             {' '}
-            <Link className={cx('sub-link')} to="#">
+            <NavLink className={cx('sub-link')} to="#">
               Chuẩn đoán hình ảnh
-            </Link>
+            </NavLink>
             <ul className={cx('sub-list-1')}>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   Giải pháp chẩn đoán hình ảnh – Orthophos SL 3D
-                </Link>
+                </NavLink>
               </li>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   CHỤP PHIM CONEBEAM CT
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
           <li className={cx('sub-item')}>
             {' '}
-            <Link className={cx('sub-link')} to="#">
+            <NavLink className={cx('sub-link')} to="#">
               Điều trị nha chu
-            </Link>
+            </NavLink>
             <ul className={cx('sub-list-1')}>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   GIẢI PHÁP ĐIỀU TRỊ NHA CHU
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
           <li className={cx('sub-item')}>
             {' '}
-            <Link className={cx('sub-link')} to="#">
+            <NavLink className={cx('sub-link')} to="#">
               Giải pháp chỉnh nha
-            </Link>
+            </NavLink>
             <ul className={cx('sub-list-1')}>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   CS5
-                </Link>
+                </NavLink>
               </li>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   Aligner Chewies
-                </Link>
+                </NavLink>
               </li>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   KÍNH LÚP NHA KHOA – GIẢI PHÁP BẢO VỆ CỘT SỐNG CHO NHA SĨ
-                </Link>
+                </NavLink>
               </li>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   Hệ Thống Chỉnh Nha CS4
-                </Link>
+                </NavLink>
               </li>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   Ống Bọc Lò Xo Dynaflex
-                </Link>
+                </NavLink>
               </li>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   GIẢI PHÁP CẢI TIẾN VƯỢT TRỘI CHO DÂY TMA
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
           <li className={cx('sub-item')}>
             {' '}
-            <Link className={cx('sub-link')} to="#">
+            <NavLink className={cx('sub-link')} to="#">
               Giải pháp cho labo
-            </Link>
+            </NavLink>
             <ul className={cx('sub-list-1')}>
               <li className={cx('sub-item-1')}>
-                <Link to="#" className={cx('sub-link-1')}>
+                <NavLink to="#" className={cx('sub-link-1')}>
                   Giải pháp thẩm mỹ tự nhiên như răng thật
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
           <li className={cx('sub-item')}>
             {' '}
-            <Link className={cx('sub-link')} to="#">
+            <NavLink className={cx('sub-link')} to="#">
               Giải pháp lâm sàn
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </li>
       <li className={cx('item')}>
-        <Link className={cx('link')}>Catalog</Link>
+        <Link to={config.routes.catalog} className={cx('link')}>
+          Catalog
+        </Link>
       </li>
       <li className={cx('item')}>
-        <Link className={cx('link')}>Tin tức& Sự kiện</Link>
+        <Link to={config.routes.news} className={cx('link')}>
+          Tin tức& Sự kiện
+        </Link>
       </li>
       <li className={cx('item')}>
-        <Link className={cx('link')}>Huấn luyện& Đào tạo</Link>
+        <Link to={config.routes.education} className={cx('link')}>
+          Huấn luyện& Đào tạo
+        </Link>
       </li>
     </ul>
   );

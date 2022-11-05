@@ -23,7 +23,7 @@ const NAV_FOOTER_LIST = [
       },
       {
         navName: 'News & Events',
-        navLink: config.routes.newsAndEvent,
+        navLink: config.routes.news,
       },
       {
         navName: 'Emax',
@@ -49,13 +49,13 @@ const NAV_FOOTER_LIST = [
     data: [
       {
         navName: 'Liên hệ',
-        navLink: config.routes.product,
+        navLink: config.routes.library,
       },
     ],
   },
 ];
 
-const INFO_PANNEL_LIST = [
+const INFO_PANEL_LIST = [
   {
     icon: <ValiIcon></ValiIcon>,
     name: 'Carerr',
@@ -93,7 +93,7 @@ function Footer() {
                 </Row>
               </Col>
               <Col span={24} lg={{ span: 8 }} md={{ span: 8 }}>
-                {INFO_PANNEL_LIST.map((item, index) => {
+                {INFO_PANEL_LIST.map((item, index) => {
                   return (
                     <InfoPanel key={index} icon={item.icon}>
                       {item.name}

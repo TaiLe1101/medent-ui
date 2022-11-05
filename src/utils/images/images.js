@@ -30,6 +30,9 @@ import image5 from '../../assets/images/i-4.jpg';
 import image6 from '../../assets/images/i-6.jpg';
 import image7 from '../../assets/images/i-7.png';
 import image8 from '../../assets/images/i-8.jpg';
+import image9 from '../../assets/images/i-9.jpg';
+import image10 from '../../assets/images/i-12.png';
+import image11 from '../../assets/images/i-13.png';
 
 export {
   logo1,
@@ -62,4 +65,7 @@ export {
   image6,
   image7,
   image8,
+  image9,
+  image10,
+  image11,
 };

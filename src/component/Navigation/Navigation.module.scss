@@ -20,6 +20,10 @@
 
 .link {
   padding: 20px 0;
+
+  &.active {
+    color: var(--color-primary);
+  }
 }
 
 .icon {
