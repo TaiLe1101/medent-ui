@@ -19,6 +19,7 @@ const routes = {
   laboTools: '/labo-tools',
   materialLabo: '/material-labo',
   orthodontic: '/orthodontic',
+  admin: '/admin',
   notFound: '*',
 };
 

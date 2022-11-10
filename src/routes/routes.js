@@ -1,24 +1,24 @@
 import config from '~/configs';
-import Home from '~/pages/Home';
-import Product from '~/pages/Product';
-import Blogs from '~/pages/Blogs';
-import Library from '~/pages/Library';
-import Introduce from '~/pages/Introduce';
-import Emax from '~/pages/Emax';
+import Home from '~/pages/publicPages/Home';
+import Product from '~/pages/publicPages/Product';
+import Blogs from '~/pages/publicPages/Blogs';
+import Library from '~/pages/publicPages/Library';
+import Introduce from '~/pages/publicPages/Introduce';
+import Emax from '~/pages/publicPages/Emax';
 import SliderLayout from '~/layouts/SliderLayout';
-import Solution from '~/pages/Solution/Solution';
+import Solution from '~/pages/publicPages/Solution/Solution';
 import { background3, background5 } from '~/utils/images';
-import Catalog from '~/pages/Catalog';
-import News from '~/pages/News';
-import Education from '~/pages/Education';
-import CatalogDetail from '~/pages/CatalogDetail';
-import NotFound from '~/pages/NotFound';
-import DentalEquipment from '~/pages/DentalEquipment';
-import Clinical from '~/pages/Clinical';
-import DentistryTools from '~/pages/DentistryTools';
-import LaboTools from '~/pages/LaboTools';
-import MaterialLabo from '~/pages/MaterialLabo';
-import Orthodontic from '~/pages/Orthodontic';
+import Catalog from '~/pages/publicPages/Catalog';
+import News from '~/pages/publicPages/News';
+import Education from '~/pages/publicPages/Education';
+import CatalogDetail from '~/pages/publicPages/CatalogDetail';
+import DentalEquipment from '~/pages/publicPages/DentalEquipment';
+import Clinical from '~/pages/publicPages/Clinical';
+import DentistryTools from '~/pages/publicPages/DentistryTools';
+import LaboTools from '~/pages/publicPages/LaboTools';
+import MaterialLabo from '~/pages/publicPages/MaterialLabo';
+import Orthodontic from '~/pages/publicPages/Orthodontic';
+import Login from '~/pages/publicPages/Login';
 
 const publicRouter = [
   {
@@ -120,8 +120,8 @@ const publicRouter = [
     backgroundImage: background3,
   },
   {
-    path: config.routes.notFound,
-    component: NotFound,
+    path: config.routes.admin,
+    component: Login,
     layout: null,
   },
 ];

@@ -6,21 +6,20 @@ import styles from './Button.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Button({ children, onClick, className, to }) {
+function Button({ children, onClick, className }) {
   const classes = cx('btn', {
     [className]: className,
   });
   return (
-    <Link to={to || '#'} className={classes} onClick={onClick}>
+    <button className={classes} onClick={onClick}>
       {children}
-    </Link>
+    </button>
   );
 }
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func,
-  to: PropTypes.string,
 };
 
 export default Button;
