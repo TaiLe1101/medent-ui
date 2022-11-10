@@ -68,7 +68,12 @@ function Header() {
         <div className={cx('wrapper-header')}>
           <div className={cx('wrapper-header-content')}>
             <div className={cx('wrapper-header-content-item')}>
-              <Link to={config.routes.home}>
+              <Link
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                to={config.routes.home}
+              >
                 <img className={cx('logo')} src={logo} alt="logo" />
               </Link>
               <Navigation></Navigation>

@@ -13,6 +13,13 @@ const routes = {
   catalogDetail: '/catalog/@:product',
   news: '/news',
   education: '/education',
+  dentalEquipment: '/dentalEquipment',
+  clinical: '/clinical',
+  dentistryTools: '/dentistry-tools',
+  laboTools: '/labo-tools',
+  materialLabo: '/material-labo',
+  orthodontic: '/orthodontic',
+  notFound: '*',
 };
 
 export default routes;
